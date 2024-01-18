@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.shadow{
+    height: 7.4rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+}
+
+.movies-list{
+    color: white;
+    padding-left:1rem ;
+}
+
+.movie-card{
+    display: flex;
+    margin-bottom: 1rem ;
+    overflow-y: hidden;
+    overflow-x: scroll;
+   
+}
+.movies-card::-webkit-scrollbar{
+    display: none;
+}
+.movies{
+    height: 250px;
+    transition: transform 450ms;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+.movies:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
