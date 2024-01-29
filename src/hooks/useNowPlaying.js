@@ -17,7 +17,7 @@ const useNowPlaying = () => {
 
   }
   useEffect(() => {
-     getData();
+  getData();
   }, []);
 };
 

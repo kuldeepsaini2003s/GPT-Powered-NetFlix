@@ -10,11 +10,11 @@ const useTopRated = () => {
   async function getData() {
     const response = await fetch(baseURL + requests.fetchtoprated, API_OPTIONS);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     dispatch(setTopRated(data.results));
   }
   useEffect(() => {
-     getData();
+   getData();
   }, []);
 };
 

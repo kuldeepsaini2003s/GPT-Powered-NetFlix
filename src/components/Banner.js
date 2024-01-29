@@ -5,8 +5,8 @@ import VideoBackground from "./VideoBackground";
 const Banner = () => {
   return (
     <>
-      {/* <VideoBackground /> */}
-      <VideoTitle />
+      <VideoBackground />
+      <VideoTitle />/
     </>
   );
 };

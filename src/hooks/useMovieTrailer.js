@@ -13,11 +13,10 @@ const useMovieTrailer = () => {
       API_OPTIONS
     );
     const data = await response.json();
-    console.log(data);
     dispatch(setTrailer(data.results[0].id));
   }
   useEffect(() => {
-   !nowplaying && getData();
+    getData();
   }, []);
 };
 

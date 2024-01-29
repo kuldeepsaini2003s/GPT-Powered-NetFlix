@@ -10,7 +10,6 @@ const usePopular = () => {
   async function getData() {
     const response = await fetch(baseURL + requests.fetchpopular, API_OPTIONS);
     const data = await response.json();
-    console.log(data);
 
     dispatch(setPopular(data.results));
   }

@@ -39,8 +39,12 @@ const Signup = () => {
   };
 
   const handlesubmitted = () => {
+    if (!email.current.value) {
+      setErrormsg("Invalid emai. Please try again.");
+      return;
+    }
     if (!email.current.value || !password.current.value) {
-      setErrormsg("Invalid email or password. Please try again.");
+      setErrormsg("Invalid password. Please try again.");
       return;
     }
     if (control && !name.current.value) {

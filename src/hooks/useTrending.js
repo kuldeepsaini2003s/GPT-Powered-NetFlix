@@ -14,7 +14,7 @@ const useTrending = () => {
     dispatch(setTrending(data.results));
   }
   useEffect(() => {
-    getData();
+   getData();
   }, []);
 };
 

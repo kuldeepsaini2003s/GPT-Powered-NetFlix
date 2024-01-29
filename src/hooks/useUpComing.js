@@ -10,11 +10,11 @@ const useUpComing = () => {
   async function getData() {
     const response = await fetch(baseURL + requests.fetchupcoming, API_OPTIONS);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     dispatch(setUpComing(data.results));
   }
   useEffect(() => {
-   getData();
+  getData();
   }, []);
 };
 
