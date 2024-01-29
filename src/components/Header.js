@@ -1,12 +1,6 @@
 import React from "react";
-// import { NetflixBG } from "./constant";
 import Navbar from "./Navbar";
 import LoginScreen from "./LoginScreen";
-import useMovieTrailer from "../hooks/useMovieTrailer";
-import useNowPlaying from "../hooks/useNowPlaying";
-import usePopular from "../hooks/usePopular";
-import useTopRated from "../hooks/useTopRated";
-import useUpComing from "../hooks/useUpComing";
 
 const Header = () => {
  
