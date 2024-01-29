@@ -4,11 +4,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Browse from "./Browse";
 import Header from "./Header";
 import Signup from "./Signup";
-import useMovieTrailer from "../hooks/useMovieTrailer";
 import useNowPlaying from "../hooks/useNowPlaying";
 import usePopular from "../hooks/usePopular";
 import useTopRated from "../hooks/useTopRated";
-import useTrending from "../hooks/useTrending";
 import useUpComing from "../hooks/useUpComing";
 
 const AppRouter = createBrowserRouter([
