@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <div
       id="Nav-bar"
-      className="flex justify-between w-screen px-16 py-5 bg-gradient-to-b from-black "
+      className="flex justify-between w-screen text-white px-16 py-5 bg-gradient-to-b from-black "
     >
       <div>
         <img

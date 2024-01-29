@@ -2,13 +2,13 @@ import React from "react";
 import { useDispatch} from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Browse from "./Browse";
-import Header from "./Header";
+import Home from "./Home";
 import Signup from "./Signup";
 
 const AppRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <Home />,
   },
   {
     path: "/login",
@@ -27,7 +27,7 @@ const Body = () => {
   return (
     <>
       <RouterProvider router={AppRouter}>
-        <Header />
+        <Home />
       </RouterProvider>
     </>
   );

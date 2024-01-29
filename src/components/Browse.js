@@ -5,6 +5,7 @@ import useTopRated from "../hooks/useTopRated";
 import useUpComing from "../hooks/useUpComing";
 import MainContainer from "./MainContainer";
 import SecoundaryContainer from "./SecoundaryContainer";
+import Navbar from "./Navbar";
 
 const Browse = () => {
   useNowPlaying();
@@ -13,6 +14,7 @@ const Browse = () => {
   useUpComing();
   return (
     <>
+      <div className="absolute top-0 z-20"><Navbar/></div>
       <MainContainer />
       <SecoundaryContainer />
     </>

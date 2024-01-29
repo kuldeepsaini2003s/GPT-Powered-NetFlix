@@ -11,7 +11,6 @@ const useNowPlaying = () => {
       API_OPTIONS
     );
     const data = await response.json();
-      // console.log(data)
     dispatch(setNowPlaying(data.results));
 
   }
