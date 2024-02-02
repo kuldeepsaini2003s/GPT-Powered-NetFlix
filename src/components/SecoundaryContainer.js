@@ -8,7 +8,7 @@ const SecoundaryContainer = () => {
   return (
     <div>
       <div className="bg-black">
-        <div className="absolute -mt-48 left-[2rem] z-20 border-black">
+        <div className="absolute -mt-44 left-[2rem] z-20 border-black">
           <MovieList title="Trending" movies={movies?.nowplaying} />
           <MovieList title="Top Rated" movies={movies?.toprated} />
           <MovieList title="Up Coming" movies={movies?.upcoming} />

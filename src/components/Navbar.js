@@ -8,7 +8,7 @@ import { addUser, removeUser } from "../utils/userSlice";
 
 const Navbar = () => {
   const user = useSelector((store) => store.user);
-  console.log(user  )
+
   const signIn = user ? "Logout" : "Sign Up";
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -23,7 +23,6 @@ const Navbar = () => {
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        console.log(user);
         const { uid, email, displayName } = user;
         dispatch(addUser({ uid: uid, email: email, displayName: displayName }));
         navigate("/Browser");

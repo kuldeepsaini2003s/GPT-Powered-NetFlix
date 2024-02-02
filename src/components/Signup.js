@@ -52,7 +52,6 @@ const Signup = () => {
       return;
     }
     setErrormsg("");
-    console.log(values);
 
     if (control) {
       createUserWithEmailAndPassword(
@@ -77,7 +76,6 @@ const Signup = () => {
           if (err.code === "auth/email-already-in-use") {
             setErrormsg("User already subscribed. Please login in.");
           } else {
-            console.log("Error during sign-up:", err);
             setErrormsg("An error occurred during sign-Up. Please try again.");
           }
         });
@@ -95,7 +93,6 @@ const Signup = () => {
             addUser({ uid: uid, email: email, displayName: displayName })
           );
           navigate("/");
-          console.log("welcome the user ");
         })
         .catch((err) => {
           setErrormsg("Invalid email or password. Please try again.", err);

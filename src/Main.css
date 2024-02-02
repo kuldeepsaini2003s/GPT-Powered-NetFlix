@@ -22,7 +22,7 @@ body{
     padding-left:1rem ;
 }
 
-.movie-card{
+.movie-card{    
     display: flex;
     margin-bottom: 1rem ;
     overflow-y: hidden;

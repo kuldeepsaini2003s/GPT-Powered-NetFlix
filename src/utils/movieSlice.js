@@ -8,6 +8,7 @@ const initialState = {
   upcoming: null,
   popular: null,
   nowplaying: null,
+  selectedvideo: null,
 };
 
 const movieSlice = createSlice({
@@ -35,6 +36,9 @@ const movieSlice = createSlice({
     setNowPlaying: (state, action) => {
       state.nowplaying = action.payload;
     },
+    setselectedvideo: (state, action) => {
+      state.selectedvideo = action.payload;
+    },
   },
 });
 
@@ -46,6 +50,7 @@ export const {
   setTopRated,
   setUpComing,
   setTrending,
+  setselectedvideo,
 } = movieSlice.actions;
 
 export default movieSlice.reducer;

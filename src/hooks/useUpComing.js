@@ -7,14 +7,15 @@ const useUpComing = () => {
   const upcoming = useSelector((store) => store.movies?.upcoming);
   const dispatch = useDispatch();
   async function getData() {
-    const response = await fetch( "https://api.themoviedb.org/3/movie/upcoming?page=1",
-    API_OPTIONS);
+    const response = await fetch(
+      "https://api.themoviedb.org/3/movie/upcoming?page=1",
+      API_OPTIONS
+    );
     const data = await response.json();
-    // console.log(data);
     dispatch(setUpComing(data.results));
   }
   useEffect(() => {
-  !upcoming && getData();
+    !upcoming && getData();
   }, []);
 };
 
